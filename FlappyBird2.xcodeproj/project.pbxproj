@@ -12,6 +12,10 @@
 		CA8112241E370F7D0088E1FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8112221E370F7D0088E1FF /* Main.storyboard */; };
 		CA8112261E370F7D0088E1FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA8112251E370F7D0088E1FF /* Assets.xcassets */; };
 		CA8112291E370F7D0088E1FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8112271E370F7D0088E1FF /* LaunchScreen.storyboard */; };
+		CA8112321E370FB50088E1FF /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8112311E370FB50088E1FF /* SpriteKit.framework */; };
+		CA8112341E3711670088E1FF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8112331E3711670088E1FF /* GameScene.swift */; };
+		CA8112361E377CC10088E1FF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8112351E377CC10088E1FF /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		CA8112381E377D080088E1FF /* coin03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA8112371E377D080088E1FF /* coin03.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		CA8112251E370F7D0088E1FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA8112281E370F7D0088E1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA81122A1E370F7D0088E1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA8112311E370FB50088E1FF /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		CA8112331E3711670088E1FF /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		CA8112351E377CC10088E1FF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CA8112371E377D080088E1FF /* coin03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coin03.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA8112361E377CC10088E1FF /* AudioToolbox.framework in Frameworks */,
+				CA8112321E370FB50088E1FF /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +50,7 @@
 			children = (
 				CA81121D1E370F7D0088E1FF /* FlappyBird2 */,
 				CA81121C1E370F7D0088E1FF /* Products */,
+				CA8112301E370FB50088E1FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +65,25 @@
 		CA81121D1E370F7D0088E1FF /* FlappyBird2 */ = {
 			isa = PBXGroup;
 			children = (
+				CA8112371E377D080088E1FF /* coin03.mp3 */,
 				CA81121E1E370F7D0088E1FF /* AppDelegate.swift */,
 				CA8112201E370F7D0088E1FF /* ViewController.swift */,
 				CA8112221E370F7D0088E1FF /* Main.storyboard */,
 				CA8112251E370F7D0088E1FF /* Assets.xcassets */,
+				CA8112331E3711670088E1FF /* GameScene.swift */,
 				CA8112271E370F7D0088E1FF /* LaunchScreen.storyboard */,
 				CA81122A1E370F7D0088E1FF /* Info.plist */,
 			);
 			path = FlappyBird2;
+			sourceTree = "<group>";
+		};
+		CA8112301E370FB50088E1FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA8112351E377CC10088E1FF /* AudioToolbox.framework */,
+				CA8112311E370FB50088E1FF /* SpriteKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA8112381E377D080088E1FF /* coin03.mp3 in Resources */,
 				CA8112291E370F7D0088E1FF /* LaunchScreen.storyboard in Resources */,
 				CA8112261E370F7D0088E1FF /* Assets.xcassets in Resources */,
 				CA8112241E370F7D0088E1FF /* Main.storyboard in Resources */,
@@ -137,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA8112341E3711670088E1FF /* GameScene.swift in Sources */,
 				CA8112211E370F7D0088E1FF /* ViewController.swift in Sources */,
 				CA81121F1E370F7D0088E1FF /* AppDelegate.swift in Sources */,
 			);
