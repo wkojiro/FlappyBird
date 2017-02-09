@@ -210,8 +210,9 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
     
     func restart() {
         score = 0
+        itemscore = 0
         scoreLabelNode.text = String("Score:\(score)")    // ←追加
-    
+        itemscoreLabelNode.text = String("ItemScore:\(score)")
         bird.position = CGPoint(x: self.frame.size.width * 0.2, y:self.frame.size.height * 0.7)
         bird.physicsBody?.velocity = CGVector.zero
         bird.physicsBody?.collisionBitMask = groundCategory | wallCategory
